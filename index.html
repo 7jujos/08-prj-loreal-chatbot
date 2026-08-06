@@ -26,6 +26,67 @@
         </p>
       </header>
 
+      <!------- Product Routine Builder ------->
+      <section class="routine-builder" aria-labelledby="routineHeading">
+        <div class="routine-header">
+          <h2 id="routineHeading">Smart Routine Builder</h2>
+          <button
+            id="rtlToggle"
+            type="button"
+            class="rtl-toggle"
+            aria-pressed="false"
+          >
+            Switch to RTL
+          </button>
+        </div>
+
+        <p class="routine-subtitle">
+          Browse products, select what fits your goals, then generate a
+          personalized routine powered by AI.
+        </p>
+
+        <div class="catalog-controls">
+          <label for="productSearch" class="visually-hidden"
+            >Search products</label
+          >
+          <input
+            id="productSearch"
+            type="search"
+            placeholder="Search by product name or keyword..."
+            autocomplete="off"
+          />
+          <div
+            id="categoryFilters"
+            class="category-filters"
+            aria-label="Product categories"
+          ></div>
+        </div>
+
+        <div id="productGrid" class="product-grid" aria-live="polite"></div>
+
+        <div class="selected-products-wrap">
+          <div class="selected-products-header">
+            <h3>Selected Products</h3>
+            <button id="clearSelectedBtn" type="button" class="clear-btn">
+              Clear all
+            </button>
+          </div>
+          <div
+            id="selectedProducts"
+            class="selected-products"
+            aria-live="polite"
+          ></div>
+        </div>
+
+        <button
+          id="generateRoutineBtn"
+          type="button"
+          class="generate-routine-btn"
+        >
+          Generate Routine
+        </button>
+      </section>
+
       <!------- Chat Area ------->
       <main>
         <section class="chatbox">
